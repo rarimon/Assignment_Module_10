@@ -6,3 +6,15 @@ function calculateDifference(a,b){
 let result=calculateDifference(50,20);
 console.log(result);
 
+
+
+// 2) Write a function named isOdd that takes one argument and returns true if the number is odd, and false if it is not.
+
+function isOdd(a){
+    return a%2 !==0;
+}
+console.log(isOdd(11));
+console.log(isOdd(10));
+
+// 3) Write a function named findMin that takes an array of numbers and returns the smallest number from the array.
+
