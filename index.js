@@ -18,3 +18,19 @@ console.log(isOdd(10));
 
 // 3) Write a function named findMin that takes an array of numbers and returns the smallest number from the array.
 
+function findMin (arr){
+    let number=arr[0];
+
+    for(let i=1;i<arr.length;i++){
+         if(arr[i] < number){
+             number=arr[i];
+         }
+    }
+    return number;
+
+}
+const arr=[10,20,63,40,5];
+let showresult =findMin(arr);
+console.log("Smallest Number is ="+" "+showresult);
+
+
