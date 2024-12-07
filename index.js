@@ -55,3 +55,9 @@ console.log(showShort);
 
 // 6) Write a function named lowercaseFirstLetter that takes a string and returns the same string with the first letter lowercased.
 
+function lowercaseFirstLetter(letter){
+     return letter[0].toLowerCase()+letter.slice(1);
+}
+let letter="AMAR SUNAR BAGNAL AMI TUMAI VALOBASHI";
+console.log(lowercaseFirstLetter(letter));
+
