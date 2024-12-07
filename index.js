@@ -34,3 +34,24 @@ let showresult =findMin(arr);
 console.log("Smallest Number is ="+" "+showresult);
 
 
+// 4) Write a function named filterEvenNumbers that takes an array of numbers and returns a new array containing only the even numbers.
+
+function filterEvenNumbers(number){
+       return number.filter(number => number%2 === 0);
+}
+let numbers=[1,20,63,40,53,22,44,21];
+let shouNewArray=filterEvenNumbers(numbers);
+console.log(shouNewArray);
+
+// 5) Write a function named sortArrayDescending that takes an array of numbers and returns a new array sorted in descending order.
+
+function sortArrayDescending(arr){
+   return  arr.sort((a, b) => a - b);
+}
+
+let array=[10,20,63,40,53,22,44,21];
+let showShort=sortArrayDescending(array);
+console.log(showShort);
+
+// 6) Write a function named lowercaseFirstLetter that takes a string and returns the same string with the first letter lowercased.
+
