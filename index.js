@@ -61,3 +61,34 @@ function lowercaseFirstLetter(letter){
 let letter="AMAR SUNAR BAGNAL AMI TUMAI VALOBASHI";
 console.log(lowercaseFirstLetter(letter));
 
+
+// 7) Write a function named findAverage that takes an array of numbers and returns the average of all elements.
+
+function findAverage (arr){
+    const sum = arr.reduce((acc, currentValue) => acc + currentValue, 0);
+
+    return sum/arr.length;
+
+}
+let numbers1=[1,20,63,40,53,22,44,21];
+let average=findAverage(numbers1);
+console.log(average);
+
+
+// 8) Write a function named isLeapYear that takes a year as an argument and returns true if the year is a leap year, and false if it is not.
+
+function isLeapYear(year){
+    if(year % 4 === 0 && year % 100 !== 0) {
+        return true;
+    }
+    else if(year % 400 === 0){
+        return true;
+    }
+    else {
+        return false;
+    }
+
+}
+console.log(isLeapYear(2020));
+console.log(isLeapYear(2021));
+console.log(isLeapYear(2022));
